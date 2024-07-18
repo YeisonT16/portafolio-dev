@@ -1,12 +1,35 @@
 ---
+const TAGS = {
+    
+        NEXT: {
+            name: 'Next.js',
+            class:'bg-black text-white',
+        },
+        TAILWIND: {
+            name: 'Tailwind CSS',
+            class: 'bg-[#003159] text-white'
+        },
+        JAVASCRIPT: {
+            name: 'JavaScript',
+            class: 'bg-yellow-400 text-black'
+        },
+        HTML: {
+            name: 'HTML',
+            class: 'bg-yellow-600 text-black'
+        }
+    
+}
+    
+//pendientes los iconos por añadir
+
 const PROJECTS = [
     {
-        title: 'Project 1',
-        description: 'Lorem',
+        title: 'Interfaz Grafica Tramite de Visas - React.js',
+        description: 'Proyecto con clientes reales para facilitar el tramite de visas en todo el pais',
         link:'#',
         github: '#',
         image: 'https://via.placeholder.com/300X200',
-        tags: ['HTML', 'CSS', 'JavaScript'],
+        tags: [TAGS.HTML, TAGS.TAILWIND, TAGS.JAVASCRIPT],
     },
 ]
 
@@ -14,16 +37,25 @@ const PROJECTS = [
 ---
 
 {
-    PROJECTS.map(({image, title, description, tags}) => (
+    PROJECTS.map(({image, title, description, tags,}) => (
     <article>
-    <h3>{title}</h3>
-    <p>{description}</p>
-    <ul>
+    <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+    <p class="text-lg mb-4 text-pretty">{description}</p>
+    <ul class="flex gap-x-2 flex-row">
         {tags.map((tag) => (
-            <li>{tag}</li>
+            <li>
+                <span
+                    class={`flex gap-x-2 rounded-full text-xs font-semibold ${tag.class} py-1 px-2`}
+                >
+                    {tag.name}
+                </span>
+            </li>
         ))}
     </ul>
-        <img src={image} alt={title} />      
+        <img 
+        class="rounded shadow-2xl shadow-white/10"
+        src={image} 
+        alt={title} />      
     </article>
     )
 
