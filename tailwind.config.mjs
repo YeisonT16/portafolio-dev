@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss/types/config').Config} */
-const plugin = require('tailwindcss/plugin');
+ //const plugin = require('tailwindcss/plugin');
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	darkMode: 'class',
