@@ -23,7 +23,7 @@ const { description, title } = Astro.props;
   </head>
   <body class="relative text-white dark:text-white">
     <div
-      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-950 img-gradient"
     >
     </div>
     <Header />
@@ -36,6 +36,13 @@ const { description, title } = Astro.props;
       html {
         font-family: "Onest Variable", system-ui, sans-serif;
         scroll-behavior: smooth;
+      }
+      .img-gradient {
+        background: linear-gradient(
+          142deg,
+          rgba(63, 22, 109, 0.702) 0%,
+          rgba(56, 29, 97, 0.128) 70%
+        );
       }
       body {
         background: #050505;
@@ -51,6 +58,13 @@ const { description, title } = Astro.props;
         }
       }
 
+      .nav-bar {
+        -webkit-backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px);
+        background-color: rgba(57, 21, 103, 0.129);
+
+        box-shadow: inset 0 0 3px #bf97ff70;
+      }
       .btn-animate::before {
         content: "";
         position: absolute;
