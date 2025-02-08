@@ -23,7 +23,8 @@ const TAGS = {
 const PROJECTS = [
   {
     title: "CRUD operations with prime react - React.js",
-    description: "Proyecto ",
+    description:
+      "Proyecto lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, ultricies nunc. Nulla facilisi. Nullam nec nisi",
     link: "#",
     github: "#",
     image: "https://via.placeholder.com/300X200",
@@ -31,7 +32,8 @@ const PROJECTS = [
   },
   {
     title: "CRUD operations with prime react - React.js",
-    description: "Proyecto ",
+    description:
+      "Proyecto lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, ultricies nunc. Nulla facilisi. Nullam nec nisi",
     link: "#",
     github: "#",
     image: "https://via.placeholder.com/300X200",
@@ -39,7 +41,8 @@ const PROJECTS = [
   },
   {
     title: "CRUD operations with prime react - React.js",
-    description: "Proyecto ",
+    description:
+      "Proyecto lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, ultricies nunc. Nulla facilisi. Nullam nec nisi",
     link: "#",
     github: "#",
     image: "https://via.placeholder.com/300X200",
@@ -47,7 +50,8 @@ const PROJECTS = [
   },
   {
     title: "CRUD operations with prime react - React.js",
-    description: "Proyecto ",
+    description:
+      "Proyecto lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, ultricies nunc. Nulla facilisi. Nullam nec nisi",
     link: "#",
     github: "#",
     image: "https://via.placeholder.com/300X200",
@@ -55,7 +59,8 @@ const PROJECTS = [
   },
   {
     title: "CRUD operations with prime react - React.js",
-    description: "Proyecto ",
+    description:
+      "Proyecto lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, ultricies nunc. Nulla facilisi. Nullam nec nisi",
     link: "#",
     github: "#",
     image: "https://via.placeholder.com/300X200",
@@ -66,14 +71,14 @@ const PROJECTS = [
 
 {
   PROJECTS.map(({ image, title, description, tags }) => (
-    <article class="flex border-white w-full h-60 rounded-lg items-center bg-gradient-to-t bg-violet-900/90 mb-10">
+    <article class="flex border-white w-full h-60 rounded-lg items-center  mb-10 p-6 bg-gradient-to-r from-violet-800/25 via-violet-900/15 to-violet-950/5">
       <img
-        class="shadow-2xl p-6 shadow-white/10 w-3/12 h-full rounded-lg"
+        class="shadow-2xl shadow-white/10 w-3/12 h-full rounded-xl border border-white"
         src={image}
         alt={title}
       />
-      <div class="block content-between p-6">
-        <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+      <div class="flex flex-col justify-between ml-10 h-full p-1">
+        <h3 class="text-3xl font-medium text-yellow-200 mb-2">{title}</h3>
         <p class="text-lg mb-4 text-pretty">{description}</p>
         <ul class="flex gap-x-2 flex-row">
           {tags.map((tag) => (
