@@ -1,5 +1,15 @@
 ---
+import TailwindIcon from "../components/icons/TailwindIcon.astro";
+import ReactIcon from "../components/icons/ReactIcon.astro";
+import JavaScriptIcon from "../components/icons/JavaScriptIcon.astro";
+import NextIcon from "../components/icons/NextIcon.astro";
+import AstroIcon from "../components/icons/AstroIcon.astro";
+
 const TAGS = {
+  ASTRO: {
+    name: "Astro",
+    class: "bg-black text-white",
+  },
   NEXT: {
     name: "Next.js",
     class: "bg-black text-white",
@@ -37,7 +47,7 @@ const PROJECTS = [
     link: "#",
     github: "#",
     image: "https://via.placeholder.com/300X200",
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.JAVASCRIPT],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.JAVASCRIPT],
   },
   {
     title: "CRUD operations with prime react - React.js",
@@ -46,7 +56,7 @@ const PROJECTS = [
     link: "#",
     github: "#",
     image: "https://via.placeholder.com/300X200",
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.JAVASCRIPT],
+    tags: [TAGS.ASTRO, TAGS.TAILWIND, TAGS.JAVASCRIPT],
   },
   {
     title: "CRUD operations with prime react - React.js",
@@ -86,6 +96,11 @@ const PROJECTS = [
               <span
                 class={`flex gap-x-2 rounded-full text-xs font-semibold ${tag.class} py-1 px-3 border-2 border-solid shadow-[0px_0px_15px_blue,0px_0px_15px_blue_inset]`}
               >
+                {tag.name === "Tailwind CSS" && <TailwindIcon class="size-4" />}
+                {tag.name === "React.js" && <ReactIcon class="size-4" />}
+                {tag.name === "JavaScript" && <JavaScriptIcon class="size-4" />}
+                {tag.name === "Next.js" && <NextIcon class="size-4" />}
+                {tag.name === "Astro" && <AstroIcon class="size-4" />}
                 {tag.name}
               </span>
             </li>
