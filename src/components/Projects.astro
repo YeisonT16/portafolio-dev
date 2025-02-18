@@ -4,6 +4,7 @@ import ReactIcon from "../components/icons/ReactIcon.astro";
 import JavaScriptIcon from "../components/icons/JavaScriptIcon.astro";
 import NextIcon from "../components/icons/NextIcon.astro";
 import AstroIcon from "../components/icons/AstroIcon.astro";
+import NetlifyIcon from "./icons/NetlifyIcon.astro";
 
 const TAGS = {
   ASTRO: {
@@ -92,22 +93,32 @@ const PROJECTS = [
         <p class="text-base mb-4 text-white opacity-90 text-pretty  max-w-fit">
           {description}
         </p>
-        <ul class="flex gap-x-2 flex-row">
-          {tags.map((tag) => (
-            <li>
-              <span
-                class={`flex gap-x-2 rounded-full text-xs font-semibold ${tag.class} py-1 px-3 border-2 border-solid shadow-[0px_0px_15px_blue,0px_0px_15px_blue_inset]`}
-              >
-                {tag.name === "Tailwind CSS" && <TailwindIcon class="size-4" />}
-                {tag.name === "React.js" && <ReactIcon class="size-4" />}
-                {tag.name === "JavaScript" && <JavaScriptIcon class="size-4" />}
-                {tag.name === "Next.js" && <NextIcon class="size-4" />}
-                {tag.name === "Astro" && <AstroIcon class="size-4" />}
-                {tag.name}
-              </span>
-            </li>
-          ))}
-        </ul>
+        <div class="flex content-center w-auto">
+          <button class="flex items-center justify-center gap-1 p-1 w-40 h-auto border border-white mr-7 rounded-full bg-black">
+            <NetlifyIcon class="size-4" />
+            <p>Ver proyecto</p>
+          </button>
+          <ul class="flex gap-x-2 flex-row items-center">
+            {tags.map((tag) => (
+              <li>
+                <span
+                  class={`flex items-center gap-x-2 rounded-full text-xs font-semibold ${tag.class} py-1 px-3 border-2 border-solid shadow-[0px_0px_15px_blue,0px_0px_15px_blue_inset]`}
+                >
+                  {tag.name === "Tailwind CSS" && (
+                    <TailwindIcon class="size-4" />
+                  )}
+                  {tag.name === "React.js" && <ReactIcon class="size-4" />}
+                  {tag.name === "JavaScript" && (
+                    <JavaScriptIcon class="size-4" />
+                  )}
+                  {tag.name === "Next.js" && <NextIcon class="size-4" />}
+                  {tag.name === "Astro" && <AstroIcon class="size-4" />}
+                  {tag.name}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </article>
   ))
