@@ -94,11 +94,16 @@ const PROJECTS = [
           {description}
         </p>
         <div class="flex content-center w-auto">
-          <button class="flex items-center justify-center gap-1 p-1 w-40 h-auto border border-white mr-7 rounded-full bg-black">
-            <NetlifyIcon class="size-4" />
-            <p>Ver proyecto</p>
-          </button>
-          <ul class="flex gap-x-2 flex-row items-center">
+          <a
+            class="btn-animate scale-[0.9] hover:scale-[0.95] transition duration-200 block cursor-pointer text-white mx-auto my-0 w-[169px] whitespace-nowrap font-medium rounded-full overflow-hidden p-1 isolate"
+            href=""
+          >
+            <span class="relative flex items-center justify-center gap-1 p-1 w-40 h-auto border-white mr-7 rounded-full bg-black hover:border-transparent border-[2px] border-solid hover:shadow-none shadow-[0px_0px_15px_blue,0px_0px_15px_blue_inset] transition duration-200">
+              <NetlifyIcon class="size-4" />
+              <p>Ver proyecto</p>
+            </span>
+          </a>
+          <ul class="flex gap-x-2 flex-row items-center ">
             {tags.map((tag) => (
               <li>
                 <span
