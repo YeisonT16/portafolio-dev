@@ -95,10 +95,10 @@ const PROJECTS = [
         </p>
         <div class="flex content-center w-auto">
           <a
-            class="btn-animate scale-[0.9] hover:scale-[0.95] transition duration-200 block cursor-pointer text-white mx-auto my-0 w-[169px] whitespace-nowrap font-medium rounded-full overflow-hidden p-1 isolate"
+            class="btn-animate scale-[0.9] hover:scale-[0.95] transition duration-200 block cursor-pointer text-white mx-4 my-0 w-[166px] whitespace-nowrap font-medium rounded-full overflow-hidden p-[3px] isolate"
             href=""
           >
-            <span class="relative flex items-center justify-center gap-1 p-1 w-40 h-auto border-white mr-7 rounded-full bg-black hover:border-transparent border-[2px] border-solid hover:shadow-none shadow-[0px_0px_15px_blue,0px_0px_15px_blue_inset] transition duration-200">
+            <span class="relative flex items-center justify-center gap-1 p-1 w-40 h-auto border-white mr-7 rounded-full bg-black hover:border-transparent border-[2px] border-solid hover:shadow-transparent shadow-[0px_0px_15px_blue,0px_0px_15px_blue_inset] transition duration-200">
               <NetlifyIcon class="size-4" />
               <p>Ver proyecto</p>
             </span>
@@ -107,7 +107,7 @@ const PROJECTS = [
             {tags.map((tag) => (
               <li>
                 <span
-                  class={`flex items-center gap-x-2 rounded-full text-xs font-semibold ${tag.class} py-1 px-3 border-2 border-solid shadow-[0px_0px_15px_blue,0px_0px_15px_blue_inset]`}
+                  class={`flex items-center gap-x-2 rounded-full text-xs font-semibold ${tag.class} py-1 px-3 border-2 border-solid border-white/40`}
                 >
                   {tag.name === "Tailwind CSS" && (
                     <TailwindIcon class="size-4" />
