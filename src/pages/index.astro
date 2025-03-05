@@ -30,16 +30,16 @@ import AboutMe from "../components/AboutMe.astro";
       <img
         src="/src/assets/mainIconsdark.svg"
         alt="Icons"
-        class="absolute top-14 -right-[10px] hidden sm:block sm:w-64 md:w-[25%] xl:w-[40%]"
+        class="absolute sm:-right-[50px] top-14 -right-[10px] hidden sm:block sm:w-64 md:w-[40%] xl:w-[40%]"
       />
 
       <img
-        class="rounded-full size-24 mt-16 object-contain mb-4 border-2 border-solid shadow-[0px_0px_15px_blue,0px_0px_15px_blue_inset]"
+        class="rounded-full md:size-20 xl:size-24 mt-16 object-contain mb-4 border-2 border-solid shadow-[0px_0px_15px_blue,0px_0px_15px_blue_inset]"
         src="/src/images/yeison.png"
         alt="Yeison Photo"
       />
       <h1
-        class="text-indigo-200 text-xl md:text-3xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+        class="text-indigo-200 text-lg md:text-xl lg:text-3xl xl:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
         Hey, soy Yeison Silva
         <a
@@ -50,7 +50,9 @@ import AboutMe from "../components/AboutMe.astro";
           ><Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
-      <h2 class="text-xl lg:text-2xl text-wrap max-w-[600px]">
+      <h2
+        class="text-lg md:text-xl xl:text-2xl text-wrap md:max-w-[450px] xl:max-w-[600px]"
+      >
         <span>+1 año de experiencia.</span><span class="text-[#48dcfa]"
           >Desarrollador Frontend</span
         >. <span class="text-indigo-300">De Bogotá, Colombia</span>.<span
