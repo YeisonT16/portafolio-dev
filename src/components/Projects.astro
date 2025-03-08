@@ -109,17 +109,23 @@ const PROJECTS = [
             {tags.map((tag) => (
               <li>
                 <span
-                  class={`flex items-center content-center xl:gap-x-1 2xl:gap-x-2 rounded-full sm:text-[7px] 2xl:text-xs sm:font-normal lg:font-semibold ${tag.class} py-1 px-3 sm:border lg:border-2 border-solid border-white/40`}
+                  class={`flex items-center justify-center xl:gap-x-1 2xl:gap-x-2 rounded-full sm:text-[7px] 2xl:text-xs sm:font-normal lg:font-semibold ${tag.class} py-1 px-2 2xl:px-3 sm:border lg:border-2 border-solid border-white/40`}
                 >
                   {tag.name === "Tailwind CSS" && (
-                    <TailwindIcon class="size-4" />
+                    <TailwindIcon class="size-4 pr-[2px]" />
                   )}
-                  {tag.name === "React.js" && <ReactIcon class="size-4" />}
+                  {tag.name === "React.js" && (
+                    <ReactIcon class="size-4 pr-[2px]" />
+                  )}
                   {tag.name === "JavaScript" && (
-                    <JavaScriptIcon class="size-4" />
+                    <JavaScriptIcon class="size-4 pr-1" />
                   )}
-                  {tag.name === "Next.js" && <NextIcon class="size-4" />}
-                  {tag.name === "Astro" && <AstroIcon class="size-4" />}
+                  {tag.name === "Next.js" && (
+                    <NextIcon class="size-4 pr-[2px]" />
+                  )}
+                  {tag.name === "Astro" && (
+                    <AstroIcon class="size-4 pr-[2px]" />
+                  )}
                   {tag.name}
                 </span>
               </li>
