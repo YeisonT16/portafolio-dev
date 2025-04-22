@@ -11,9 +11,8 @@ import CodeIcon from "../components/icons/CodeIcon.astro";
 import Experience from "../components/Experience.astro";
 import Projects from "../components/Projects.astro";
 import AboutMe from "../components/AboutMe.astro";
-import NavigationMenu from "../components/NavigationMenu.tsx";
 import HamburguerIcon from "../components/icons/HamburguerIcon.astro";
-import ViewMenu from "../components/ViewMenu";
+import ViewMenu from "../components/ViewMenu.tsx";
 ---
 
 <Layout
@@ -22,7 +21,7 @@ import ViewMenu from "../components/ViewMenu";
 >
   <main class="px-4">
     <video
-      class="absolute left-0 w-full top-[88px] lg:top-6 2xl:top-0 -translate-y-1/2 rotate-180 object-cover lg:-translate-y-[38.5%]"
+      class="absolute z-0 left-0 w-full top-[88px] lg:top-6 2xl:top-0 -translate-y-1/2 rotate-180 object-cover lg:-translate-y-[38.5%]"
       src="/src/assets/src_assets_blackhole.webm"
       autoplay
       loop
@@ -30,7 +29,7 @@ import ViewMenu from "../components/ViewMenu";
     >
     </video>
     <SectionContainer class="py-28 relative">
-      <ViewMenu>
+      <ViewMenu client:load>
         <HamburguerIcon />
       </ViewMenu>
       <img
