@@ -10,12 +10,12 @@ export default function NavigationMenu({isOpen}: Props) {
   return (
 <section
   className={`
-    transition-all duration-500 ease-in-out
+    min-[555px]:hidden transition-all duration-500 ease-in-out
     max-[555px]:absolute top-0 w-full nav-bar border-transparent rounded-md bg-black/90
     flex-col justify-center items-center text-center
     ${isOpen
-      ? 'max-[555px]:block max-[555px]:opacity-100 max-[555px]:translate-y-0'
-      : 'max-[555px]:opacity-0 max-[555px]:-translate-y-full max-[555px]:pointer-events-none max-[555px]:none'}
+      ? 'max-[555px]:block max-[555px]:opacity-100 max-[555px]:translate-y-0 max-[555px]:visible'
+      : 'max-[555px]:opacity-0 max-[555px]:-translate-y-full max-[555px]:pointer-events-none max-[555px]:invisible'}
   `}
 >
   <nav className="p-4 text-center w-full">
