@@ -11,7 +11,7 @@ export default function NavigationMenu({isOpen}: Props) {
 <section
   className={`
     min-[555px]:hidden transition-all duration-500 ease-in-out
-    max-[555px]:absolute top-0 w-full nav-bar border-transparent rounded-md bg-black/90
+    max-[555px]:absolute top-3 w-full nav-bar border-transparent rounded-md bg-black/90
     flex-col justify-center items-center text-center
     ${isOpen
       ? 'max-[555px]:block max-[555px]:opacity-100 max-[555px]:translate-y-0 max-[555px]:visible'
